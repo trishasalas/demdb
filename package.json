@@ -22,6 +22,13 @@
     "vue": "^2.3.4"
   },
   "devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "beta",
+    "file-loader": "^0.11.2",
+    "postcss": "^6.0.1",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-import": "^10.0.0",
+    "postcss-loader": "^2.0.5",
     "webpack": "^2.6.1"
   }
 }
