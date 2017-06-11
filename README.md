@@ -6,10 +6,10 @@ Democracy Database
 * PostgreSQL 9.5
 * Perl
 
-##Styles
+## Styles
 
 * SASS
-* cssnext
+* PostCSS-cssnext
 * PostCSS
 
 This project uses the PostCSS Utility Library
