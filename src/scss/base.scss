@@ -1,4 +1,9 @@
-$bg-color: pink;
+:root {
+  --fontSize: 1rem;
+  --mainColor: #333;
+  --highlightColor: hwb(190, 35%, 20%);
+}
+
 body {
-  background: $bg-color;
+  background: var(--mainColor);
 }
