@@ -1,0 +1,629 @@
+
+{
+    "ref_id": "1",
+    "title": "Perceivable",
+    "description": "Information and user interface components must be presentable to users in ways they can perceive.",
+    "url": "https://www.w3.org/TR/WCAG20/#perceivable",
+    "guidelines": [
+      {
+        "ref_id": "1.1",
+        "title": "Text Alternatives",
+        "description": "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.",
+        "url": "https://www.w3.org/TR/WCAG20/#text-equiv",
+        "references": [
+          {
+            "title": "Understanding Guideline 1.1",
+            "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html"
+          }
+        ],
+        "success_criteria": [
+          {
+            "ref_id": "1.1.1",
+            "title": "Non-text Content",
+            "description": "All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed in the special cases section.",
+            "url": "https://www.w3.org/TR/WCAG20/#text-equiv-all",
+            "level": "A",
+            "special_cases": [
+              {
+                "type": "exception",
+                "title": "Controls, Input",
+                "description": "If non-text content is a control or accepts user input, then it has a name that describes its purpose. (Refer to Guideline 4.1 for additional requirements for controls and content that accepts user input.)"
+              },
+              {
+                "type": "exception",
+                "title": "Time-Based Media",
+                "description": "If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content. (Refer to Guideline 1.2 for additional requirements for media.)"
+              },
+              {
+                "type": "exception",
+                "title": "Test",
+                "description": "If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content."
+              },
+              {
+                "type": "exception",
+                "title": "Sensory",
+                "description": "If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content."
+              },
+              {
+                "type": "exception",
+                "title": "CAPTCHA",
+                "description": "If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities."
+              },
+              {
+                "type": "exception",
+                "title": "Decoration, Formatting, Invisible",
+                "description": "If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology."
+              }
+            ],
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.1.1",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-text-equiv-all"
+              },
+              {
+                "title": "Understanding 1.1.1",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ref_id": "1.2",
+        "title": "Time-based Media",
+        "description": "Provide alternatives for time-based media.",
+        "url": "https://www.w3.org/TR/WCAG20/#media-equiv",
+        "references": [
+          {
+            "title": "Understanding Guideline 1.2",
+            "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv.html"
+          }
+        ],
+        "success_criteria": [
+          {
+            "ref_id": "1.2.1",
+            "title": "Audio-only and Video-only (Prerecorded",
+            "description": "For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such.",
+            "url": "https://www.w3.org/TR/WCAG20/",
+            "level": "A",
+            "special_cases": [
+              {
+                "type": "all_true",
+                "title": "Prerecorded Audio-only",
+                "description": "An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content."
+              },
+              {
+                "type": "all_true",
+                "title": "Prerecorded Video-only",
+                "description": "Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content"
+              }
+            ],
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.2.1",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-av-only-alt"
+              },
+              {
+                "title": "Understanding 1.2.1",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.2.2",
+            "title": "Captions (Prerecorded)",
+            "description": "Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such",
+            "url": "https://www.w3.org/TR/WCAG20/#media-equiv-captions",
+            "level": "A",
+            "special_cases": null,
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.2.2",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-captions"
+              },
+              {
+                "title": "Understanding 1.2.2",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.2.3",
+            "title": "Audio Description or Media Alternative (Prerecorded)",
+            "description": "An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such",
+            "url": "https://www.w3.org/TR/WCAG20/#media-equiv-audio-desc",
+            "level": "A",
+            "special_cases": null,
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.2.3",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc"
+              },
+              {
+                "title": "Understanding 1.2.3",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.2.4",
+            "title": "Captions (Live)",
+            "description": "Captions are provided for all live audio content in synchronized media",
+            "url": "https://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions",
+            "level": "AA",
+            "special_cases": null,
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.2.4",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-real-time-captions"
+              },
+              {
+                "title": "Understanding 1.2.4",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.2.5",
+            "title": "Audio Description (Prerecorded)",
+            "description": "Audio description is provided for all prerecorded video content in synchronized media",
+            "url": "https://www.w3.org/TR/WCAG20/#media-equiv-audio-desc-only",
+            "level": "AA",
+            "special_cases": null,
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.2.5",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc-only"
+              },
+              {
+                "title": "Understanding 1.2.5",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.2.6",
+            "title": "Sign Language (Prerecorded)",
+            "description": "Sign language interpretation is provided for all prerecorded audio content in synchronized media.",
+            "url": "https://www.w3.org/TR/WCAG20/#media-equiv-sign",
+            "level": "AAA",
+            "special_cases": null,
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.2.6",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-sign"
+              },
+              {
+                "title": "Understanding 1.2.6",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.2.7",
+            "title": "Extended Audio Description (Prerecorded)",
+            "description": "Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media",
+            "url": "https://www.w3.org/TR/WCAG20/#media-equiv-extended-ad",
+            "level": "AAA",
+            "special_cases": null,
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.2.7",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-extended-ad"
+              },
+              {
+                "title": "Understanding 1.2.7",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.2.8",
+            "title": "Media Alternative (Prerecorded)",
+            "description": "An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media",
+            "url": "https://www.w3.org/TR/WCAG20/#media-equiv-text-doc",
+            "level": "AAA",
+            "special_cases": null,
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.2.8",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-text-doc"
+              },
+              {
+                "title": "Understanding 1.2.8",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.2.9",
+            "title": "Audio-only (Live)",
+            "description": " An alternative for time-based media that presents equivalent information for live audio-only content is provided.",
+            "url": "https://www.w3.org/TR/WCAG20/#media-equiv-live-audio-only",
+            "level": "AAA",
+            "special_cases": null,
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.2.9",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-live-audio-only"
+              },
+              {
+                "title": "Understanding 1.2.9",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-live-audio-only.html"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ref_id": "1.3",
+        "title": "Adaptable",
+        "description": "Create content that can be presented in different ways (for example simpler layout) without losing information or structure.",
+        "url": "https://www.w3.org/TR/WCAG20/#content-structure-separation",
+        "references": [
+          {
+            "title": "Understanding Guideline 1.3",
+            "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation.html"
+          }
+        ],
+        "success_criteria": [
+          {
+            "ref_id": "1.3.1",
+            "title": "Info and Relationships",
+            "description": "Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.",
+            "url": "https://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic",
+            "level": "A",
+            "special_cases": null,
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.3.1",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"
+              },
+              {
+                "title": "Understanding 1.3.1",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.3.2",
+            "title": "Meaningful Sequence",
+            "description": "When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.",
+            "url": "https://www.w3.org/TR/WCAG20/#content-structure-separation-sequence",
+            "level": "A",
+            "special_cases": null,
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.3.2",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-sequence"
+              },
+              {
+                "title": "Understanding 1.3.2",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.3.3",
+            "title": "Sensory Characteristics",
+            "description": "Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound",
+            "url": "https://www.w3.org/TR/WCAG20/#content-structure-separation-understanding",
+            "level": "A",
+            "special_cases": null,
+            "notes": [
+              {
+                "content": "For requirements related to color, refer to Guideline 1.4."
+              }
+            ],
+            "references": [
+              {
+                "title": "How to Meet 1.3.3",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding"
+              },
+              {
+                "title": "Understanding 1.3.3",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ref_id": "1.4",
+        "title": "Distinguishable",
+        "description": "Make it easier for users to see and hear content including separating foreground from background.",
+        "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast",
+        "references": [
+          {
+            "title": "Understanding Guideline 1.4",
+            "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html"
+          }
+        ],
+        "success_criteria": [
+          {
+            "ref_id": "1.4.1",
+            "title": "Use of Color",
+            "description": "Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.",
+            "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color",
+            "level": "A",
+            "special_cases": null,
+            "notes": [
+              {
+                "content": "This success criterion addresses color perception specifically. Other forms of perception are covered in Guideline 1.3 including programmatic access to color and other visual presentation coding."
+              }
+            ],
+            "references": [
+              {
+                "title": "How to Meet 1.4.1",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-without-color"
+              },
+              {
+                "title": "Understanding 1.4.1",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.4.2",
+            "title": "Audio Control",
+            "description": "If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level. (Level A)",
+            "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio",
+            "level": "A",
+            "special_cases": null,
+            "notes": [
+              {
+                "content": "Note: Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether or not it is used to meet other success criteria) must meet this success criterion. See Conformance Requirement 5: Non-Interference. (https://www.w3.org/TR/WCAG20/#cc5)"
+              }
+            ],
+            "references": [
+              {
+                "title": "How to Meet 1.4.2",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-dis-audio"
+              },
+              {
+                "title": "Understanding 1.4.2",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.4.3",
+            "title": "Contrast (Minimum)",
+            "description": " The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following: ",
+            "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast",
+            "level": "AA",
+            "special_cases": [
+              {
+                "type": "exception",
+                "title": "Large Text",
+                "description": "Large-scale text and images of large-scale text have a contrast ratio of at least 3:1"
+              },
+              {
+                "type": "exception",
+                "title": "Incidental",
+                "description": "Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement."
+              },
+              {
+                "type": "exception",
+                "title": "Logotypes",
+                "description": "Text that is part of a logo or brand name has no minimum contrast requirement."
+              }
+            ],
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.4.3",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-contrast"
+              },
+              {
+                "title": "Understanding 1.4.3",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.4.4",
+            "title": "Resize text",
+            "description": "Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality",
+            "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale",
+            "level": "AA",
+            "special_cases": null,
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.4.4",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-scale"
+              },
+              {
+                "title": "Understanding 1.4.4",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.4.5",
+            "title": "Images of Text",
+            "description": "If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following",
+            "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-presentation",
+            "level": "AA",
+            "special_cases": [
+              {
+                "type": "exception",
+                "title": "Customizable",
+                "description": "The image of text can be visually customized to the user's requirements"
+              },
+              {
+                "type": "exception",
+                "title": "Essential",
+                "description": "A particular presentation of text is essential to the information being conveyed"
+              }
+            ],
+            "notes": [
+              {
+                "content": "Logotypes (text that is part of a logo or brand name) are considered essential"
+              }
+            ],
+            "references": [
+              {
+                "title": "How to Meet 1.4.5",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-presentation"
+              },
+              {
+                "title": "Understanding 1.4.5",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.4.6",
+            "title": "Contrast (Enhanced)",
+            "description": "The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following: ",
+            "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast7",
+            "level": "AAA",
+            "special_cases": [
+              {
+                "type": "exception",
+                "title": "Large Text",
+                "description": "Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1"
+              },
+              {
+                "type": "exception",
+                "title": "Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.",
+                "description": "Incidental"
+              },
+              {
+                "type": "exception",
+                "title": "Logotypes",
+                "description": "Text that is part of a logo or brand name has no minimum contrast requirement."
+              }
+            ],
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.4.6",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast7"
+              },
+              {
+                "title": "Understanding 1.4.6",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.4.7",
+            "title": "Low or No Background Audio",
+            "description": "For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true: (Level AAA)",
+            "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-noaudio",
+            "level": "AAA",
+            "special_cases": [
+              {
+                "type": "at_least_one",
+                "title": "No Background",
+                "description": "The audio does not contain background sounds."
+              },
+              {
+                "type": "at_least_one",
+                "title": "Turn Off",
+                "description": "The background sounds can be turned off."
+              },
+              {
+                "type": "at_least_one",
+                "title": "20 dB",
+                "description": "The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds."
+              }
+            ],
+            "notes": [
+              {
+                "content": "Per the definition of 'decibel,' background sound that meets this requirement will be approximately four times quieter than the foreground speech content."
+              }
+            ],
+            "references": [
+              {
+                "title": "How to Meet 1.4.7",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-noaudio"
+              },
+              {
+                "title": "Understanding 1.4.7"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.4.8",
+            "title": "Visual Presentation",
+            "description": "For the visual presentation of blocks of text, a mechanism is available to achieve the following:",
+            "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation",
+            "level": "AAA",
+            "special_cases": [
+              {
+                "type": "all_true",
+                "title": "Foreground and background colors can be selected by the user."
+              },
+              {
+                "type": "all_true",
+                "title": "Width is no more than 80 characters or glyphs (40 if CJK)"
+              },
+              {
+                "type": "all_true",
+                "title": "Text is not justified (aligned to both the left and the right margins)."
+              },
+              {
+                "type": "all_true",
+                "title": "Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing."
+              },
+              {
+                "type": "all_true",
+                "title": "Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window."
+              }
+            ],
+            "notes": null,
+            "references": [
+              {
+                "title": "How to Meet 1.4.8",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-visual-presentation"
+              },
+              {
+                "title": "Understanding 1.4.8",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html"
+              }
+            ]
+          },
+          {
+            "ref_id": "1.4.9",
+            "title": "Images of Text (No Exception)",
+            "description": "Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.",
+            "url": "https://www.w3.org/TR/WCAG20/",
+            "level": "AAA",
+            "special_cases": null,
+            "notes": [
+              {
+                "content": "Logotypes (text that is part of a logo or brand name) are considered essential."
+              }
+            ],
+            "references": [
+              {
+                "title": "How to Meet 1.4.9",
+                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-images"
+              },
+              {
+                "title": "Understanding 1.4.9",
+                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+
