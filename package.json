@@ -21,9 +21,14 @@
   "dependencies": {
     "css-loader": "^0.28.4",
     "cssnano": "^3.10.0",
+    "leaflet-ajax": "^2.1.0",
+    "postcss-color-function": "^4.0.0",
     "postcss-cssnext": "^2.11.0",
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.6",
+    "postcss-scss": "^1.0.1",
+    "postcss-utilities": "^0.7.0",
+    "precss": "^1.4.0",
     "style-loader": "^0.18.2",
     "sugarss": "^1.0.0"
   },
